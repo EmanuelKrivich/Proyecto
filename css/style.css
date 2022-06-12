@@ -23,21 +23,23 @@
     grid-area: logo;
     display: flex;
     align-items: center;
-    background-color: rgb(80, 84, 145);
+    background-color: rgb(69, 123, 157);
+    /* background-image: linear-gradient(to left, rgb(69, 123, 157), rgb(80, 84, 145)); */
 }
 
 .logo a {
     text-decoration: none;
     color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
-    border: solid antiquewhite;
+    border-bottom: solid antiquewhite;
     border-radius: 5%;
     padding: 4px 4px 4px 4px;
     margin-left: 50px;
 }
 
 .logo a:hover {
-    color: rgb(177, 102, 102);
+    color: rgb(221, 120, 120);
+    transition: .5s;
 }
 
 .menu {
@@ -45,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    background-color: rgb(80, 84, 145);
+    background-image: linear-gradient(to right, rgb(69, 123, 157), rgb(80, 84, 145));
     width: 100%;
 }
 
@@ -63,14 +65,18 @@
     padding-right: 1.5vw;
 }
 
+.menu ul li:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 .menu a {
     text-decoration: none;
     color: navajowhite;
-
 }
 
 .menu a:hover {
-    color: rgb(177, 102, 102);
+    color: rgb(221, 120, 120);
 }
 
 .imagenTerapia {
@@ -132,12 +138,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(177, 102, 102);
+    background-image: linear-gradient(to right, 
+    rgb(221, 120, 120), #5f1638);
 }
 
 .footer a i {
     font-size: 2rem;
     margin: .5rem;
+    color: antiquewhite;
+}
+
+.footer a i:hover{
+    color: rgb(69, 123, 157);
+    transform: scale(1.1);
+    transition: .3s;
 }
 
 .contenedorContacto {
