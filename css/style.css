@@ -202,6 +202,45 @@
     margin-left: 2.5vw;
 }
 
+
+.contenedorServicios {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: .5fr .2fr 1fr 1fr .5fr; 
+    grid-template-areas: 
+      "logo menu menu menu"
+      "subtitulo subtitulo subtitulo subtitulo"
+      "terapiaIndividual terapiaIndividual terapiaPareja terapiaPareja"
+      "terapiaIndividual terapiaIndividual terapiaPareja terapiaPareja"
+      "footer footer footer footer"; 
+  }
+
+.servicios img{
+    width: 45rem;
+}
+
+.terapiaIndividual { 
+    grid-area: terapiaIndividual;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.terapiaPareja { 
+    grid-area: terapiaPareja;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.servicios{
+    display: flex;
+    
+}
+
+
+
+
 /* MEDIA QUERY */
 
 
