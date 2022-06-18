@@ -10,7 +10,7 @@
     grid-template-columns: .5fr .5fr 1fr 1fr;
     grid-template-rows: .5fr 1fr 1fr .5fr;
     grid-template-areas:
-        "logo menu menu menu"
+        "menu menu menu menu"
         "texto1 texto1 imagenTerapia imagenTerapia"
         "texto2 texto2 imagenTerapia imagenTerapia"
         "footer footer footer footer"
@@ -18,22 +18,11 @@
     height: 100vh
 }
 
-
-.logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-    background-color: rgb(69, 123, 157);
-    margin-bottom: 0;
-}
-
-.logo a {
-    text-decoration: none;
-    color: antiquewhite;
-    font-family: 'Montserrat', sans-serif;
-    border-bottom: solid antiquewhite;
-    border-radius: 5%;
-    padding: 4px 4px 4px 4px;
+.logo{
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    border-bottom: solid 1px antiquewhite;
     margin-left: 50px;
 }
 
@@ -79,6 +68,10 @@
     color: rgb(221, 120, 120);
 }
 
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
 
 .imagenTerapia {
     grid-area: imagenTerapia;
@@ -88,9 +81,13 @@
 .imagenTerapia img {
     width: 40vw;
     margin-left: 200px;
-    border: solid;
-    border-radius: 70%;
+    border: solid rgb(177, 102, 102);
     margin-top: 20px;
+}
+
+.imagenTerapia img:hover{
+    filter: blur(2px);
+    transition: .5s;
 }
 
 .texto1 {
@@ -126,6 +123,13 @@
     margin-left: 50px;
     margin-top: 20px;
 }
+
+/* ANIMACION TEXTOS INDEX */
+.texto1 p:hover{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
+.texto2 p:hover{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
 
 .cursiva {
     font-style: oblique;
@@ -208,7 +212,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: .2fr .8fr .8fr .2fr;
     grid-template-areas:
-        "logo menu menu menu"
+        "menu menu menu menu"
         "slider-servicios slider-servicios slider-servicios slider-servicios"
         "slider-servicios slider-servicios slider-servicios slider-servicios"
         "footer footer footer footer";
@@ -236,8 +240,8 @@
 
 
 .slider-servicios img:hover {
-    filter: blur(2px);
-    transition: .5s;
+    filter: blur(3px);
+    transition: 1s;
 
 }
 
