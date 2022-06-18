@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     background-color: rgb(69, 123, 157);
-    /* background-image: linear-gradient(to left, rgb(69, 123, 157), rgb(80, 84, 145)); */
+    margin-bottom: 0;
 }
 
 .logo a {
@@ -65,7 +65,7 @@
     padding-right: 1.5vw;
 }
 
-.menu ul li:hover{
+.menu ul li:hover {
     transform: scale(1.1);
     transition: .5s;
 }
@@ -139,8 +139,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, 
-    rgb(221, 120, 120), #5f1638);
+    background-image: linear-gradient(to right,
+            rgb(221, 120, 120), #5f1638);
 }
 
 .footer a i {
@@ -149,7 +149,7 @@
     color: antiquewhite;
 }
 
-.footer a i:hover{
+.footer a i:hover {
     color: rgb(69, 123, 157);
     transform: scale(1.1);
     transition: .3s;
@@ -204,40 +204,42 @@
 
 
 .contenedorServicios {
-    display: grid;  
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: .5fr .2fr 1fr 1fr .5fr; 
-    grid-template-areas: 
-      "logo menu menu menu"
-      "subtitulo subtitulo subtitulo subtitulo"
-      "terapiaIndividual terapiaIndividual terapiaPareja terapiaPareja"
-      "terapiaIndividual terapiaIndividual terapiaPareja terapiaPareja"
-      "footer footer footer footer"; 
-  }
-
-.servicios img{
-    width: 45rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr .8fr .8fr .2fr;
+    grid-template-areas:
+        "logo menu menu menu"
+        "slider-servicios slider-servicios slider-servicios slider-servicios"
+        "slider-servicios slider-servicios slider-servicios slider-servicios"
+        "footer footer footer footer";
 }
 
-.terapiaIndividual { 
-    grid-area: terapiaIndividual;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+.slider-servicios {
+    grid-area: slider-servicios;
 }
 
-.terapiaPareja { 
-    grid-area: terapiaPareja;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+.slider-servicios h3 {
+    font-family: 'Cinzel', serif;
 }
 
-.servicios{
-    display: flex;
-    
+.slider-servicios h3:hover {
+    transform: scale(1.1);
+    color: rgb(221, 120, 120);
+    transition: .5s;
 }
 
+.slider-servicios p:hover {
+    transform: scale(1.1);
+    color: rgb(221, 120, 120);
+    transition: .5s;
+}
+
+
+.slider-servicios img:hover {
+    filter: blur(2px);
+    transition: .5s;
+
+}
 
 
 
