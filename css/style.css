@@ -91,7 +91,7 @@
 }
 
 .texto1 {
-    grid-area: texto1;
+    grid-area: texto1;  
 }
 
 .texto1 p {
@@ -124,13 +124,18 @@
     margin-top: 20px;
 }
 
-/* ANIMACION TEXTOS INDEX */
+/* ANIMACION TEXTOS INDEX e INFORMACION */
 .texto1 p:hover {
     -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
     animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
 }
 
 .texto2 p:hover {
+    -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.textoInfo p:hover {
     -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
     animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
 }
@@ -294,13 +299,56 @@
       "footer footer footer footer"; 
 }
 
+.video { 
+    grid-area: video; 
+    display: flex;
+    flex-direction: column;
+}
+
+.video p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: rgb(80, 84, 145);
+    border-left: solid rgb(177, 102, 102);
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
 .textoInfo { 
     grid-area: textoInfo; 
     max-width: 650px;
 
 }
 
-.video { grid-area: video; }
+.textoInfo1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: rgb(177, 102, 102);
+    border: solid rgb(80, 84, 145);
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.textoInfo2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: rgb(80, 84, 145);
+    border: solid rgb(177, 102, 102);
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
 
 /* MEDIA QUERY */
 
