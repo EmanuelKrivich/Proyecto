@@ -206,7 +206,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
     grid-template-areas:
-        "logo menu menu menu"
+        "menu menu menu menu"
         "subtitulo subtitulo formualrio formualrio"
         "formulario formulario formulario formulario"
         "formulario formulario formulario formulario"
@@ -221,17 +221,23 @@
 }
 
 .datos {
-    margin-left: 2.5vw;
+    margin-left: 2vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-left: solid 2px rgb(80, 84, 145);
     padding-left: 10px;
-    height: 38vh;
+    height: 32vh;
+}
+
+.datos input{
+    margin-bottom: 10px;
+}
+
+.datos select{
+    margin-bottom: 10px;
 }
 
 .consultas {
     margin-left: 20vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-left: solid 2px rgb(80, 84, 145);
     padding: 5px;
     height: 15vh;
 }
@@ -297,12 +303,14 @@
       "textoInfo textoInfo video video" 
       "textoInfo textoInfo video video" 
       "footer footer footer footer"; 
+      height: 100vh;
 }
 
 .video { 
     grid-area: video; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .video p{
