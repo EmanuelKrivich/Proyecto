@@ -419,6 +419,26 @@
         display: none;
     }
 
+    .contenedorServicios {
+        background-color: rgb(247, 247, 244);
+        grid-template-areas:
+            "menu menu menu menu"
+            "slider-servicios slider-servicios slider-servicios slider-servicios slider-servicios"
+            "carousel-caption carousel-caption carousel-caption carousel-caption"
+            "footer footer footer footer";
+        height: 100vh;
+    }
+
+    .carousel-caption {
+        position: relative;
+        top: 20px;
+        left: 5px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+
     .contenedorContacto {
         grid-template-rows: .1fr .1fr 1fr 1fr .2fr;
         grid-template-areas:
@@ -524,5 +544,25 @@
 @media (max-width: 375px) {
     .consultas {
         display: none;
+    }
+
+    .contenedorServicios {
+        background-color: rgb(247, 247, 244);
+        grid-template-areas:
+            "menu menu menu menu"
+            "slider-servicios slider-servicios slider-servicios slider-servicios slider-servicios"
+            "carousel-caption carousel-caption carousel-caption carousel-caption"
+            "footer footer footer footer";
+        height: 100vh;
+    }
+
+    .carousel-caption {
+        position: relative;
+        top: 20px;
+        left: 5px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+
     }
 }
