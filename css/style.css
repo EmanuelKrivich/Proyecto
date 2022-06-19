@@ -281,7 +281,26 @@
 
 }
 
+.contenedorInformacion {
+    background-color: rgb(247, 247, 244);
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: .5fr .2fr 1fr 1fr .5fr; 
+    grid-template-areas: 
+      "menu menu menu menu"
+      "subtitulo subtitulo subtitulo subtitulo"
+      "textoInfo textoInfo video video" 
+      "textoInfo textoInfo video video" 
+      "footer footer footer footer"; 
+}
 
+.textoInfo { 
+    grid-area: textoInfo; 
+    max-width: 650px;
+
+}
+
+.video { grid-area: video; }
 
 /* MEDIA QUERY */
 
